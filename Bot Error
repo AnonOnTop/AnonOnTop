@@ -1,0 +1,28 @@
+{
+  "name": "Set Bot Activity On Bot Error",
+  "permissions": "NONE",
+  "permissions2": "NONE",
+  "restriction": "1",
+  "_id": "SUAMe",
+  "actions": [
+    {
+      "gameName": "[🎭]",
+      "gameLink": "https://www.youtube.com/shorts/QTT5iHCHSn0",
+      "activityType": "STREAMING",
+      "name": "Set Bot Game"
+    },
+    {
+      "time": "12",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "gameName": "[❌]",
+      "gameLink": "https://www.youtube.com/shorts/QTT5iHCHSn0",
+      "activityType": "STREAMING",
+      "name": "Set Bot Game"
+    }
+  ],
+  "comType": "0",
+  "event-type": "37"
+}
