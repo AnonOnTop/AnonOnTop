@@ -1,0 +1,322 @@
+
+{
+  "name": "RPS",
+  "permissions": "NONE",
+  "permissions2": "NONE",
+  "restriction": "0",
+  "_id": "HrCQd",
+  "actions": [
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Choose your move...",
+      "buttons": [],
+      "selectMenus": [
+        {
+          "placeholder": "Select your move",
+          "id": "msg-select-cb94861",
+          "tempVarName": "value",
+          "row": "",
+          "min": "1",
+          "max": "1",
+          "mode": "PERSONAL",
+          "time": "",
+          "options": [
+            {
+              "label": "Rock",
+              "description": "A powerful stone (beats scissors).",
+              "value": "rock",
+              "emoji": "🌑",
+              "default": "false"
+            },
+            {
+              "label": "Paper",
+              "description": "A flimsy piece of paper (beats rock).",
+              "value": "paper",
+              "emoji": "📄",
+              "default": "false"
+            },
+            {
+              "label": "Scissors",
+              "description": "A sharp pair of scissors (beats paper).",
+              "value": "scissors",
+              "emoji": "✂️",
+              "default": "false"
+            }
+          ],
+          "actions": [
+            {
+              "storage": "1",
+              "varName": "msg",
+              "type": "all",
+              "searchValue": "",
+              "name": "Disable Buttons and Selects"
+            },
+            {
+              "storage": "1",
+              "varName": "value",
+              "branches": [
+                {
+                  "comparison": "1",
+                  "value": "rock",
+                  "actions": [
+                    {
+                      "storage": "1",
+                      "varName": "result",
+                      "min": "1",
+                      "max": "3",
+                      "name": "Generate Random Number"
+                    },
+                    {
+                      "storage": "1",
+                      "varName": "result",
+                      "branches": [
+                        {
+                          "comparison": "1",
+                          "value": "1",
+                          "actions": [
+                            {
+                              "channel": "0",
+                              "varName": "",
+                              "message": "${member} used rock, bot uses paper.\n\nBot wins!!",
+                              "buttons": [],
+                              "selectMenus": [],
+                              "reply": true,
+                              "ephemeral": false,
+                              "tts": false,
+                              "file": "",
+                              "storage": "0",
+                              "varName2": "",
+                              "name": "Send Message"
+                            }
+                          ]
+                        },
+                        {
+                          "comparison": "1",
+                          "value": "2",
+                          "actions": [
+                            {
+                              "channel": "0",
+                              "varName": "",
+                              "message": "${member} used rock, bot uses scissors.\n\n${member} wins!!",
+                              "buttons": [],
+                              "selectMenus": [],
+                              "reply": true,
+                              "ephemeral": false,
+                              "tts": false,
+                              "file": "",
+                              "storage": "0",
+                              "varName2": "",
+                              "name": "Send Message"
+                            }
+                          ]
+                        },
+                        {
+                          "comparison": "1",
+                          "value": "3",
+                          "actions": [
+                            {
+                              "channel": "0",
+                              "varName": "",
+                              "message": "${member} used rock, bot uses rock.\n\nIt was a tie...",
+                              "buttons": [],
+                              "selectMenus": [],
+                              "reply": true,
+                              "ephemeral": false,
+                              "tts": false,
+                              "file": "",
+                              "storage": "0",
+                              "varName2": "",
+                              "name": "Send Message"
+                            }
+                          ]
+                        }
+                      ],
+                      "name": "Multi-Check Variable"
+                    }
+                  ]
+                },
+                {
+                  "comparison": "1",
+                  "value": "paper",
+                  "actions": [
+                    {
+                      "storage": "1",
+                      "varName": "result",
+                      "min": "1",
+                      "max": "3",
+                      "name": "Generate Random Number"
+                    },
+                    {
+                      "storage": "1",
+                      "varName": "result",
+                      "branches": [
+                        {
+                          "comparison": "1",
+                          "value": "1",
+                          "actions": [
+                            {
+                              "channel": "0",
+                              "varName": "",
+                              "message": "${member} used paper, bot uses scissors.\n\nBot wins!!",
+                              "buttons": [],
+                              "selectMenus": [],
+                              "reply": true,
+                              "ephemeral": false,
+                              "tts": false,
+                              "file": "",
+                              "storage": "0",
+                              "varName2": "",
+                              "name": "Send Message"
+                            }
+                          ]
+                        },
+                        {
+                          "comparison": "1",
+                          "value": "2",
+                          "actions": [
+                            {
+                              "channel": "0",
+                              "varName": "",
+                              "message": "${member} used paper, bot uses rock.\n\n${member} wins!!",
+                              "buttons": [],
+                              "selectMenus": [],
+                              "reply": true,
+                              "ephemeral": false,
+                              "tts": false,
+                              "file": "",
+                              "storage": "0",
+                              "varName2": "",
+                              "name": "Send Message"
+                            }
+                          ]
+                        },
+                        {
+                          "comparison": "1",
+                          "value": "3",
+                          "actions": [
+                            {
+                              "channel": "0",
+                              "varName": "",
+                              "message": "${member} used paper, bot uses paper.\n\nIt was a tie...",
+                              "buttons": [],
+                              "selectMenus": [],
+                              "reply": true,
+                              "ephemeral": false,
+                              "tts": false,
+                              "file": "",
+                              "storage": "0",
+                              "varName2": "",
+                              "name": "Send Message"
+                            }
+                          ]
+                        }
+                      ],
+                      "name": "Multi-Check Variable"
+                    }
+                  ]
+                },
+                {
+                  "comparison": "1",
+                  "value": "scissors",
+                  "actions": [
+                    {
+                      "storage": "1",
+                      "varName": "result",
+                      "min": "1",
+                      "max": "3",
+                      "name": "Generate Random Number"
+                    },
+                    {
+                      "storage": "1",
+                      "varName": "result",
+                      "branches": [
+                        {
+                          "comparison": "1",
+                          "value": "1",
+                          "actions": [
+                            {
+                              "channel": "0",
+                              "varName": "",
+                              "message": "${member} used scissors, bot uses rock.\n\nBot wins!!",
+                              "buttons": [],
+                              "selectMenus": [],
+                              "reply": true,
+                              "ephemeral": false,
+                              "tts": false,
+                              "file": "",
+                              "storage": "0",
+                              "varName2": "",
+                              "name": "Send Message"
+                            }
+                          ]
+                        },
+                        {
+                          "comparison": "1",
+                          "value": "2",
+                          "actions": [
+                            {
+                              "channel": "0",
+                              "varName": "",
+                              "message": "${member} used scissors, bot uses paper.\n\n${member} wins!!",
+                              "buttons": [],
+                              "selectMenus": [],
+                              "reply": true,
+                              "ephemeral": false,
+                              "tts": false,
+                              "file": "",
+                              "storage": "0",
+                              "varName2": "",
+                              "name": "Send Message"
+                            }
+                          ]
+                        },
+                        {
+                          "comparison": "1",
+                          "value": "3",
+                          "actions": [
+                            {
+                              "channel": "0",
+                              "varName": "",
+                              "message": "${member} used scissors, bot uses scissors.\n\nIt was a tie...",
+                              "buttons": [],
+                              "selectMenus": [],
+                              "reply": true,
+                              "ephemeral": false,
+                              "tts": false,
+                              "file": "",
+                              "storage": "0",
+                              "varName2": "",
+                              "name": "Send Message"
+                            }
+                          ]
+                        }
+                      ],
+                      "name": "Multi-Check Variable"
+                    }
+                  ]
+                }
+              ],
+              "name": "Multi-Check Variable"
+            }
+          ]
+        }
+      ],
+      "reply": true,
+      "ephemeral": false,
+      "tts": false,
+      "file": "",
+      "storage": "1",
+      "varName2": "msg",
+      "name": "Send Message"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "reason": "",
+      "name": "Delete Message"
+    }
+  ],
+  "comType": "0",
+  "description": "Play rock-paper-scissors against the bot!"
+}
