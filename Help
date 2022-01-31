@@ -1,0 +1,62 @@
+{
+  "name": "help",
+  "permissions": "NONE",
+  "permissions2": "NONE",
+  "restriction": "1",
+  "_id": "miwsQ",
+  "actions": [
+    {
+      "storage": "0",
+      "varName": "",
+      "reason": "",
+      "name": "Delete Message"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "",
+          "url": "",
+          "color": "",
+          "timestamp": "false",
+          "imageUrl": "",
+          "thumbUrl": "",
+          "description": "```\n—————————[Prefix]—————————\nOur Prefix is ?\n—————————————————————[DEV ONLY COMMANDS]—————————————————————\nUptime - Displays the bots current uptime\nRestart - Restarts the bot\nStop - Stops the bot\n—————————————————————[ADMIN COMMANDS]—————————————————————\nCreateChannel - You can create any channel with any name\nDeleteChannel - You can delete any channel using the channel's id\nBan (@User) (Reason) - Ban the user from this server\nPurge (Amount) - Deletes Bulk Messages\n————————————————————[MEMBER COMMANDS]————————————————————\nRps - Rock,Paper,Scissors\nMeme - Sends one meme\nOwner - Displays Owner Of Xenon\n—————————————————————[IN DEVELOPMENT]—————————————————————\nWarn (@User) (Reason) - In Development\nWarnings (@User) - In Development\nDelWarn (WarnID) - In Development\nKick (@User) (Reason) - In Development\nPing - In Development\nBot Status - In Development\n\n\nThank You For Choosing Us To Protect You :)\n\n```\n",
+          "fields": [],
+          "author": "",
+          "authorUrl": "",
+          "authorIcon": "",
+          "footerText": "",
+          "footerIconUrl": ""
+        }
+      ],
+      "reply": true,
+      "ephemeral": false,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "time": "5",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "storage": "2",
+      "varName": "Send Message",
+      "reason": "",
+      "name": "Delete Message"
+    }
+  ],
+  "comType": "0"
+}
