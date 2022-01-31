@@ -1,0 +1,171 @@
+{
+  "name": "ban",
+  "permissions": "BAN_MEMBERS",
+  "restriction": "0",
+  "actions": [
+    {
+      "storage": "0",
+      "varName": "",
+      "reason": "",
+      "name": "Delete Message"
+    },
+    {
+      "condition": "1",
+      "comparison": "0",
+      "value": "1",
+      "iftrue": "3",
+      "iftrueVal": "2",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Parameters"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "```\nPlease mention one user in order to ban them!\n;Ban [@user] [reason]\n```",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "info": "2",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "user",
+      "name": "Store Command Params"
+    },
+    {
+      "info": "1",
+      "infoIndex": "2",
+      "storage": "1",
+      "varName": "reason",
+      "name": "Store Command Params"
+    },
+    {
+      "title": "The Server",
+      "author": "",
+      "color": "#ff0000",
+      "timestamp": "false",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "You've been **banned** from ** The Server** for:",
+      "message": "${tempVars(\"reason\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "channel": "2",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "member": "2",
+      "varName": "user",
+      "reason": "${tempVars(\"user\")} was kicked for; **${tempVars(\"reason\")}**",
+      "name": "Ban Member"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "${member} banned ${tempVars(\"user\")}",
+      "storage": "1",
+      "varName2": "bannedmsgschannel",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "time": "2",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "storage": "1",
+      "varName": "bannedmsgschannel",
+      "name": "Delete Message"
+    },
+    {
+      "info": "1",
+      "find": "mod-logs",
+      "storage": "1",
+      "varName": "moglogchanshit",
+      "name": "Find Channel"
+    },
+    {
+      "title": "Banned User",
+      "author": "",
+      "color": "#000000",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "bannedembed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "bannedembed",
+      "fieldName": "Staff",
+      "message": "${member}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "bannedembed",
+      "fieldName": "Member Banned",
+      "message": "${tempVars(\"user\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "bannedembed",
+      "fieldName": "Reason",
+      "message": "${tempVars(\"reason\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "bannedembed",
+      "channel": "5",
+      "varName2": "moglogchanshit",
+      "name": "Send Embed Message"
+    }
+  ],
+  "_id": "cnpVW",
+  "comType": "0"
+}
