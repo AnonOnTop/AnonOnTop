@@ -1,0 +1,108 @@
+{
+  "name": "On server Join",
+  "temp": "",
+  "event-type": "4",
+  "_id": "lyhnn",
+  "actions": [
+    {
+      "server": "0",
+      "varName": "",
+      "info": "2",
+      "storage": "1",
+      "varName2": "ServerName",
+      "name": "Store Server Info"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "info": "17",
+      "storage": "1",
+      "varName2": "ServerMemberCount",
+      "name": "Store Server Info"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "info": "18",
+      "storage": "1",
+      "varName2": "ServerCreatedAt",
+      "name": "Store Server Info"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "info": "48",
+      "storage": "1",
+      "varName2": "ServerOwnerID",
+      "name": "Store Server Info"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "info": "1",
+      "storage": "1",
+      "varName2": "ServerID",
+      "name": "Store Server Info"
+    },
+    {
+      "info": "0",
+      "find": "668901118700421162",
+      "storage": "1",
+      "varName": "",
+      "name": "Find Member"
+    },
+    {
+      "member": "2",
+      "varName": "ServerFindOwner",
+      "info": "21",
+      "storage": "1",
+      "varName2": "",
+      "name": "Store Member Info"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "info": "1",
+      "storage": "1",
+      "varName2": "StoreServerID",
+      "name": "Store Server Info"
+    },
+    {
+      "channel": "101",
+      "varName": "668901118700421162",
+      "message": "",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "",
+          "url": "",
+          "color": "ff0000",
+          "timestamp": "false",
+          "imageUrl": "",
+          "thumbUrl": "",
+          "description": "Server Name: ${tempVars(\"ServerName\")}\nMember Count: ${tempVars(\"ServerMemberCount\")}\nCreated At: ${tempVars(\"ServerCreatedAt\")}\nOwner ID: ${tempVars(\"ServerOwnerID\")}\nServer ID: ${tempVars(\"ServerID\")}",
+          "fields": [],
+          "author": "",
+          "authorUrl": "",
+          "authorIcon": "",
+          "footerText": "",
+          "footerIconUrl": ""
+        }
+      ],
+      "reply": true,
+      "ephemeral": false,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    }
+  ],
+  "comType": "0",
+  "restriction": "0"
+}
