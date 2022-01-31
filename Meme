@@ -1,0 +1,32 @@
+{
+  "name": "meme",
+  "permissions": "NONE",
+  "permissions2": "NONE",
+  "restriction": "0",
+  "_id": "JLMfN",
+  "actions": [
+    {
+      "storage": "0",
+      "varName": "",
+      "reason": "",
+      "name": "Delete Message"
+    },
+    {
+      "url": "resources/homies.jpg",
+      "storage": "1",
+      "varName": "image",
+      "name": "Create Image"
+    },
+    {
+      "storage": "1",
+      "varName": "image",
+      "channel": "0",
+      "varName2": "",
+      "message": ".",
+      "storage2": "0",
+      "varName3": "",
+      "name": "Send Image"
+    }
+  ],
+  "comType": "0"
+}
