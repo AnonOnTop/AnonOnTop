@@ -1,0 +1,4 @@
+- 👋 Hi, I’m @AnonOnTop
+- 👀 I’m interested in discord bot coding
+- 🌱 I’m currently learning Computer Science
+- 📫 How to reach me ˞˞Anon#8665, if i change it i will update it
